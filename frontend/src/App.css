@@ -1,0 +1,453 @@
+:root {
+  --yellow: linear-gradient(180deg, #f8d49a -146.42%, #fad79d -46);
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: ☐#788097;
+  --purple: linear-gradient(180deg, #bb67ff 0%, #c484f3 100%);
+  --pink: #ff919d;
+  --glass: rgba(143, 149, 153, 0.5);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --activeItem: ☐#f799a354;
+}
+
+.bg-image {
+  background: url(https://www.clydeco.com/getattachment/4e75a8eb-07a5-4386-9f87-e88e51904f1f/chinese-courts-upholding-the-validity-of-defective-arbitration-clauses-in-foreign-related-cases-desktop?variant=IntroBannerDesktopVarient);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+  width: 100%;
+}
+
+.bg-image2 {
+  background: url(https://assets.euromoneydigital.com/dims4/default/cad264c/2147483647/strip/true/crop/2000x988+0+0/resize/840x415!/quality/90/?url=http%3A%2F%2Feuromoney-brightspot.s3.amazonaws.com%2F35%2F0d%2Fd518d38e40a7be5d74ad433d85f8%2Fsynthliblitig.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+  width: 100%;
+}
+
+.bg-image3 {
+  background: url(https://assets.euromoneydigital.com/dims4/default/cad264c/2147483647/strip/true/crop/2000x988+0+0/resize/840x415!/quality/90/?url=http%3A%2F%2Feuromoney-brightspot.s3.amazonaws.com%2F35%2F0d%2Fd518d38e40a7be5d74ad433d85f8%2Fsynthliblitig.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+  width: 100%;
+}
+
+.bg-text {
+  display: flex;
+  align-self: flex-start;
+  margin: 1rem;
+  margin-left: 3rem;
+}
+
+.loginform {
+  left: auto;
+  margin-left: 0;
+}
+
+.line {
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 0.2rem;
+  width: 80%;
+  background-color: #0f3a57;
+}
+
+.glass {
+  width: 30rem;
+  height: 20rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  background-color: rgba(248, 242, 242, 0.151);
+  backdrop-filter: blur(0.5px);
+}
+
+.notification {
+  width: 80%;
+  margin: 0.5rem auto 0;
+  font-weight: 100;
+}
+
+.custom-btn {
+  background: #0f3a57;
+  color: white;
+  border: 2px solid rgba(214, 232, 245, 0.226);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.custom-btn:active {
+  background: #0c3149;
+  color: white;
+}
+
+.signup-link {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .bg-text {
+    display: flex;
+    align-self: center;
+    width: 85%;
+    margin: 0;
+  }
+
+  .notification {
+    width: 70%;
+  }
+
+  .form {
+    width: 100%;
+    z-index: 3;
+    margin: 5px;
+    height: auto;
+    border-radius: 2rem;
+    padding: 1.5rem 1rem;
+  }
+  
+
+  .line {
+    width: 70%;
+    font-size: 1.2rem;
+  }
+
+  .line2 {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .signup-link {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bg-text {
+    width: 95%;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+@import url("https://unpkg.com/aos@2.3.1/dist/aos.css");
+
+.h2 {
+  position: relative;
+  font-size: 6em;
+
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+}
+h2::before {
+  content: attr(data-text);
+  position: absolute;
+  color: rgb(15, 62, 103);
+
+  width: 350px;
+  font-style: italic;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid rgb(15, 62, 103);
+  animation: animate 6s linear infinite;
+  filter: drop-shadow(0 0 20px rgb(57, 205, 242));
+}
+
+h2::after {
+  color: #701b1b;
+}
+
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 8em;
+  }
+}
+
+.media {
+  --b: 2px; /* border thickness*/
+  --s: 25px; /* size of the corner*/
+  --g: 10px; /* the gap*/
+  --c: #0f3a57;
+
+  padding: calc(var(--b) + var(--g));
+  background-image: conic-gradient(
+      from 90deg at top var(--b) left var(--b),
+      #0000 25%,
+      var(--c) 0
+    ),
+    conic-gradient(
+      from -90deg at bottom var(--b) right var(--b),
+      #0000 25%,
+      var(--c) 0
+    );
+  background-position: var(--_p, 0%) var(--_p, 0%),
+    calc(100% - var(--_p, 0%)) calc(100% - var(--_p, 0%));
+  background-size: var(--s) var(--s);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: background-position 0.3s var(--_i, 0.3s),
+    background-size 0.3s calc(0.3s - var(--_i, 0.3s));
+}
+.media {
+  width: 200px;
+  height: 100px;
+  background-image: conic-gradient(
+      from 180deg at top var(--b) right var(--b),
+      #0000 25%,
+      var(--c) 0
+    ),
+    conic-gradient(
+      from 0deg at bottom var(--b) left var(--b),
+      #0000 25%,
+      var(--c) 0
+    );
+  background-position: calc(100% - var(--_p, 0%)) var(--_p, 0%),
+    var(--_p, 0%) calc(100% - var(--_p, 0%));
+}
+.media:hover {
+  background-size: calc(100% - var(--g)) calc(100% - var(--g));
+  --_p: calc(var(--g) / 2);
+  --_i: 0s;
+}
+
+body {
+  margin: 0;
+}
+
+li {
+  list-style-type: "";
+}
+
+.h7 {
+  font-weight: bold;
+  margin: 0;
+}
+
+span {
+  font-size: 12px;
+}
+
+a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid #ff4b2b;
+  background-color: #ff4b2b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.App {
+  
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+.dg-image {
+  background: url(https://tse2.mm.bing.net/th?id=OIP.JlAekGSPo-Oa6gFWXZzdVgHaFj&pid=Api&P=0);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.AppGlass {
+  width: 90%;
+  height: 90%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  align-items: center;
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  overflow: hidden;
+  grid-template-columns: 11rem auto 20rem;
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.MainDash {
+  /* padding-top: 1rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.navbar-own {
+  width: 100%;
+  padding: 0.5rem 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Cards {
+  display: flex;
+  gap: 10px;
+}
+
+.parentContainer {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .Cards {
+    flex-direction: column;
+    width: 50%;
+  }
+  .parentContainer {
+    height: 9rem;
+  }
+}
+
+.dcard {
+  border: none;
+  position: relative;
+  margin-bottom: 30px;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(26, 25, 28, 0.041),
+    0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1),
+    0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12),
+    0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+}
+
+.dcard2 {
+  padding: 30px;
+  margin: 15px 15px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.l-bg-blue-dark {
+  background-image: linear-gradient(
+    -225deg,
+    #0c2c66 0%,
+    #b8dcff 48%,
+    #6bbbff 100%
+  );
+  color: #0a1f5e;
+}
+
+.card .card-statistic-3 .card-icon-large .fas,
+.card .card-statistic-3 .card-icon-large .far,
+.card .card-statistic-3 .card-icon-large .fab,
+.card .card-statistic-3 .card-icon-large .fal {
+  font-size: 110px;
+}
+
+.card .card-statistic-3 .card-icon {
+  text-align: center;
+  line-height: 50px;
+  margin-left: 15px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  right: -1px;
+  top: 20px;
+  opacity: 0.1;
+}
+.body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6f88cf;
+}
+.formcontainer {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 6px;
+  padding: 30px;
+  margin: 0 15px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  min-height: 490px;
+}
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  /*CSS counters to number the steps*/
+  counter-reset: step;
+}
+#progressbar li {
+  list-style-type: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 9px;
+  width: 33.33%;
+  float: left;
+  position: relative;
+}
+#progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 20px;
+  line-height: 20px;
+  display: block;
+  font-size: 10px;
+  color: #333;
+  background: white;
+  border-radius: 3px;
+  margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: -50%;
+  top: 9px;
+  z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+  /*connector not needed before the first step*/
+  content: none;
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: #27ae60;
+  color: white;
+}
